@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>главная страница</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .top-bar .icon {
+            width: 30px;
+            height: 30px;
+            background-color: #666;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .card .actions {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .card .actions button {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+
+        .add-card {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #555;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+        .add-card:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="icon">👤</div>
+    </div>
+
+    <div class="container">
+        <!-- Add New Card Button -->
+        <div class="add-card">+</div>
+
+        <!-- VK Stadium Card -->
+        <div class="card">
+            <img src="vk_stadium.jpg" alt="VK Stadium">
+            <h3>VK STADIUM</h3>
+            <p>Ленинградский проспект, д. 80<br>м. Сокол</p>
+            <div class="actions">
+                <button>🗑️</button> <!-- trash -->
+                <button>👁️</button> <!-- eye -->
+                <button>✏️</button> <!-- pen -->
+            </div>
+        </div>
+
+        <!-- VK Gipsy Card -->
+        <div class="card">
+            <img src="vk_gipsy.jpg" alt="VK Gipsy">
+            <h3>VK GIPSY</h3>
+            <p>Болотная набережная, д. 3/4<br>м. Кропоткинская</p>
+            <div class="actions">
+                <button>🗑️</button>
+                <button>👁️</button>
+                <button>✏️</button>
+            </div>
+        </div>
+
+        <!-- Zoloto Card -->
+        <div class="card">
+            <img src="zoloto.jpg" alt="Zoloto">
+            <h3>ЗОЛОТО</h3>
+            <p>3-я ул. Ямского поля, д. 15<br>м. Белорусская</p>
+            <div class="actions">
+                <button>🗑️</button>
+                <button>👁️</button>
+                <button>✏️</button>
+            </div>
+        </div>
+
+        <!-- Uspensky Card -->
+        <div class="card">
+            <img src="uspensky.jpg" alt="Uspensky">
+            <h3>USPENSKY</h3>
+            <p>1-е Успенское шоссе, 7-й км,<br>Московская область, Одинцовский район</p>
+            <div class="actions">
+                <button>🗑️</button>
+                <button>👁️</button>
+                <button>✏️</button>
+            </div>
+        </div>
+
+        <!-- Mir Card -->
+        <div class="card">
+            <img src="mir.jpg" alt="Mir">
+            <h3>МИР</h3>
+            <p>Цветной б-р, д. 11, стр. 2<br>м. Цветной бульвар</p>
+            <div class="actions">
+                <button>🗑️</button>
+                <button>👁️</button>
+                <button>✏️</button>
+            </div>
+        </div>
+
+        <!-- Monkey Card -->
+        <div class="card">
+            <img src="monkey.jpg" alt="Monkey">
+            <h3>MONKEY</h3>
+            <p>ул. Лесная, д. 20, стр. 5<br>м. Белорусская</p>
+            <div class="actions">
+                <button>🗑️</button>
+                <button>👁️</button>
+                <button>✏️</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
