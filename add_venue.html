@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Модальное окно</title>
+  <link rel="stylesheet" href="add_venue.css">
+</head>
+<body>
+  <!-- Кнопка для открытия модального окна -->
+  <button id="openModal" class="btn">Добавить площадку</button>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Добавление</h2>
+      <form class="modal-form">
+        <label for="name">Введите название:</label>
+        <input type="text" id="name" placeholder="MONKEY">
+
+        <label for="address">Введите адрес:</label>
+        <input type="text" id="address" placeholder="ул. Лесная, д.20, стр.5 м. Белорусская">
+
+        <label>Добавьте фотографии:</label>
+        <div class="photo-upload">
+          <div class="photo-placeholder">+</div>
+          <div class="photo-placeholder"></div>
+          <div class="photo-placeholder"></div>
+          <div class="photo-placeholder"></div>
+        </div>
+
+        <label for="description">Описание:</label>
+        <textarea id="description" rows="5" placeholder="Введите описание..."></textarea>
+
+        <!-- Навигация -->
+        <div class="modal-footer">
+          <span>1/2</span>
+          <button type="submit" class="next-btn">→</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Подключение JS -->
+  <script src="add_venue.js"></script>
+</body>
+</html>
